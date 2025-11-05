@@ -2,9 +2,9 @@
 import { useState, useTransition } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { Input } from "../../../components/ui/input";
-import { Label } from "../../../components/ui/label";
-import { Button } from "../../../components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
 
 export default function AdminLoginPage() {
   const router = useRouter();
