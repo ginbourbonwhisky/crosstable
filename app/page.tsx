@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../components/ui/button";
 
 export default function HomePage() {
@@ -9,7 +10,9 @@ export default function HomePage() {
           Knowns からエクスポートした CSV を用いて、プロジェクト単位でクロス集計。
         </p>
         <div className="pt-2">
-          <Button>はじめる</Button>
+          <Button asChild>
+            <Link href="/admin">はじめる</Link>
+          </Button>
         </div>
       </div>
     </main>
