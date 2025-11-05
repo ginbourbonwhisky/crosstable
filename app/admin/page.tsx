@@ -3,6 +3,9 @@ import { redirect } from "next/navigation";
 import { getServerAuth } from "../../lib/auth";
 import { Button } from "../../components/ui/button";
 
+// このページは認証状態に依存するため、静的プリレンダーを無効化
+export const dynamic = "force-dynamic";
+
 export default async function AdminHomePage() {
   const session = await getServerAuth();
   if (!session?.user?.email) {
